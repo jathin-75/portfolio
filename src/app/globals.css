@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@theme {
+  --color-obsidian: #080808;
+  --color-surface-dark: #111111;
+  --color-card-dark: #141414;
+  --color-card-hover: #1A1A1A;
+  --color-maroon-deep: #5A0F1B;
+  --color-maroon-primary: #7A1F2B;
+  --color-maroon-light: #9E2A3A;
+  --color-text-primary: #F5F5F5;
+  --color-text-secondary: #A8A8A8;
+  --color-text-muted: #666666;
+  --color-border-subtle: rgba(255, 255, 255, 0.08);
+  --color-border-maroon: rgba(122, 31, 43, 0.35);
+  --font-sans: var(--font-jakarta), system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-jetbrains), monospace;
+}
+
+:root {
+  --background: #080808;
+  --foreground: #F5F5F5;
+}
+
+html {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+  background-color: #080808;
+  color: #F5F5F5;
+}
+
+body {
+  background-color: #080808;
+  color: #F5F5F5;
+  font-family: var(--font-jakarta), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography Helpers */
+.font-mono {
+  font-family: var(--font-jetbrains), monospace;
+}
+
+/* Subtle background grid pattern */
+.bg-grid-pattern {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* Radial spotlight maroon gradient */
+.bg-maroon-spotlight {
+  background: radial-gradient(circle 600px at 50% -10%, rgba(122, 31, 43, 0.25), transparent 70%);
+}
+
+.bg-maroon-spotlight-bottom {
+  background: radial-gradient(circle 500px at 50% 110%, rgba(90, 15, 27, 0.2), transparent 70%);
+}
+
+/* Custom Glow Effects */
+.glow-maroon-sm {
+  box-shadow: 0 0 20px -5px rgba(122, 31, 43, 0.3);
+}
+
+.glow-maroon-md {
+  box-shadow: 0 0 35px -8px rgba(122, 31, 43, 0.45);
+}
+
+.glow-border {
+  border-color: rgba(122, 31, 43, 0.4);
+  box-shadow: inset 0 0 12px rgba(122, 31, 43, 0.15), 0 0 15px rgba(122, 31, 43, 0.25);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+::-webkit-scrollbar-thumb {
+  background: #1F1F1F;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7A1F2B;
+}
+
+/* Selection Color */
+::selection {
+  background-color: rgba(122, 31, 43, 0.6);
+  color: #FFFFFF;
+}
+
+/* Focus States for Accessibility */
+:focus-visible {
+  outline: 2px solid #7A1F2B;
+  outline-offset: 2px;
+}
+
+/* Prevent horizontal scroll */
+*, *::before, *::after {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Allow modals and dropdowns to break out of max-width: 100% constraint safely */
+[role="dialog"], [role="menu"], .modal-overlay, .modal-content {
+  max-width: none;
+}
