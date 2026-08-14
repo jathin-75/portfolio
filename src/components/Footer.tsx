@@ -38,6 +38,8 @@ export default function Footer() {
           <span>•</span>
           <a
             href={PORTFOLIO_DATA.personal.socials.email}
+            target="_blank"
+            rel="noopener noreferrer"
             className="hover:text-white transition-colors"
           >
             Email

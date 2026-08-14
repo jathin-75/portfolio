@@ -66,7 +66,7 @@ export default function Terminal({ onOpenScheduleModal }: TerminalProps) {
       case "contact":
         responseOutput = (
           <div className="text-xs text-[#A8A8A8]">
-            <p>Email: <a href={PORTFOLIO_DATA.personal.socials.email} className="text-white underline">{PORTFOLIO_DATA.personal.socials.directEmail}</a></p>
+            <p>Email: <a href={PORTFOLIO_DATA.personal.socials.email} target="_blank" rel="noopener noreferrer" className="text-white underline">{PORTFOLIO_DATA.personal.socials.directEmail}</a></p>
             <p>GitHub: <a href={PORTFOLIO_DATA.personal.socials.github} target="_blank" className="text-white underline">{PORTFOLIO_DATA.personal.socials.github}</a></p>
           </div>
         );

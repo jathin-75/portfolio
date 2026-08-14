@@ -71,7 +71,7 @@ export const PORTFOLIO_DATA = {
     socials: {
       github: "https://github.com/jathin-75",
       linkedin: "https://www.linkedin.com/in/jathin-kurapati-venkata-sai-b108672a6/", // placeholder standard
-      email: "mailto:kurapativenkatajathin@gmail.com",
+      email: "https://mail.google.com/mail/?view=cm&fs=1&to=kurapativenkatajathin@gmail.com",
       directEmail: "kurapativenkatajathin@gmail.com"
     }
   },

@@ -18,7 +18,7 @@ export default function Hero({ onOpenScheduleModal }: HeroProps) {
   };
 
   return (
-    <section className="relative min-h-[90vh] pt-28 pb-16 sm:pt-36 sm:pb-24 flex flex-col justify-center overflow-hidden bg-grid-pattern">
+    <section className="relative min-h-[90vh] pt-28 pb-16 sm:pt-36 sm:pb-24 flex flex-col justify-center overflow-hidden bg-[#080808]">
       {/* Ambient background maroon glows */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-[#7A1F2B]/15 blur-[120px] rounded-full pointer-events-none" />
       <div className="absolute top-1/3 right-10 w-[250px] h-[250px] bg-[#5A0F1B]/10 blur-[90px] rounded-full pointer-events-none" />
@@ -115,6 +115,8 @@ export default function Hero({ onOpenScheduleModal }: HeroProps) {
 
               <a
                 href={PORTFOLIO_DATA.personal.socials.email}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-1.5 text-[#A8A8A8] hover:text-white transition-colors"
               >
                 <Mail className="w-4 h-4 text-[#7A1F2B]" />
