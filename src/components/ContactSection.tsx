@@ -55,7 +55,7 @@ export default function ContactSection({ onOpenScheduleModal }: ContactSectionPr
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-8">
         <div className="space-y-3">
           <span className="font-mono text-xs text-[#7A1F2B] uppercase tracking-widest font-bold">
-            06 // Get In Touch
+            Get In Touch
           </span>
           <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
             Let's build something.
@@ -145,11 +145,10 @@ export default function ContactSection({ onOpenScheduleModal }: ContactSectionPr
 
             {statusMsg && (
               <div
-                className={`p-3 rounded-xl text-xs font-mono flex items-center gap-2 ${
-                  statusMsg.type === "success"
+                className={`p-3 rounded-xl text-xs font-mono flex items-center gap-2 ${statusMsg.type === "success"
                     ? "bg-emerald-950/40 border border-emerald-500/30 text-emerald-300"
                     : "bg-rose-950/40 border border-rose-500/30 text-rose-300"
-                }`}
+                  }`}
               >
                 {statusMsg.type === "success" ? (
                   <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />

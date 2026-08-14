@@ -70,7 +70,7 @@ export const PORTFOLIO_DATA = {
     calendlyFallbackUrl: "https://calendly.com/kurapativenkatajathin",
     socials: {
       github: "https://github.com/jathin-75",
-      linkedin: "https://linkedin.com/in/jathin-kurapati", // placeholder standard
+      linkedin: "https://www.linkedin.com/in/jathin-kurapati-venkata-sai-b108672a6/", // placeholder standard
       email: "mailto:kurapativenkatajathin@gmail.com",
       directEmail: "kurapativenkatajathin@gmail.com"
     }

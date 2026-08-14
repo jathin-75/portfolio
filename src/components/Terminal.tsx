@@ -5,7 +5,7 @@ import { Terminal as TerminalIcon, CornerDownLeft, Sparkles, Copy, Check } from 
 import { PORTFOLIO_DATA } from "@/data/portfolio";
 
 interface TerminalProps {
-  onOpenScheduleModal: () => void;
+  onOpenScheduleModal?: () => void;
 }
 
 export default function Terminal({ onOpenScheduleModal }: TerminalProps) {
@@ -60,7 +60,7 @@ export default function Terminal({ onOpenScheduleModal }: TerminalProps) {
         );
         break;
       case "schedule":
-        onOpenScheduleModal();
+        onOpenScheduleModal?.();
         responseOutput = <p className="text-xs text-[#9E2A3A]">Opening interactive scheduling modal...</p>;
         break;
       case "contact":
